@@ -5,6 +5,8 @@
 
 - [LINK TO OUR PAPER](https://github.com/colgate-cosc465-spring24/COSC465_Capstone_Project/blob/main/DNS_PAPER.pdf)
 
+- [LINK TO THE LATEX SOURCE CODE FOR PAPER](https://www.overleaf.com/read/xtwrvzgczxqr#211aa2)
+
 ## Running the Recursive DNS Resolver
 
 ### Prerequisites
