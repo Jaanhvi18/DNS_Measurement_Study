@@ -2,7 +2,7 @@
 
 [GOOGLE DRIVE](https://drive.google.com/drive/folders/1RQK7osadHCDTjQSZ3uq-o2Xk6wLZ62-J)
 
-   ## Running the Recursive DNS Resolver
+## Running the Recursive DNS Resolver
 
    ### Prerequisites
 ### Running the Script
