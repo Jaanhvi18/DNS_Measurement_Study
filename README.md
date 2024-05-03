@@ -47,11 +47,6 @@ pip3 install seaborn
 
   
 
-#### All Visuals (PNG Files) After Research Is Completed
-
-
-## Further Research
-
 
 
  
