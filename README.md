@@ -1,5 +1,7 @@
 # Capstone Project
 
+[GOOGLE DRIVE](https://drive.google.com/drive/folders/1RQK7osadHCDTjQSZ3uq-o2Xk6wLZ62-J)
+
    ## Running the Recursive DNS Resolver
 
    ### Prerequisites
@@ -32,8 +34,6 @@
 - Ask about resolver diff functioning
 - Implement/Ask about secondary check
 
-
-[Google Drive](https://drive.google.com/drive/folders/1RQK7osadHCDTjQSZ3uq-o2Xk6wLZ62-J)
 
 ## Instructions for duplicating our experiments:
 
