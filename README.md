@@ -1,79 +1,39 @@
+```markdown
 # Capstone Project
 
-[GOOGLE DRIVE](https://drive.google.com/drive/folders/1RQK7osadHCDTjQSZ3uq-o2Xk6wLZ62-J)
+[GOOGLE DRIVE LINK FOR PROJECT DATA](https://drive.google.com/drive/folders/1RQK7osadHCDTjQSZ3uq-o2Xk6wLZ62-J?usp=drive_link)
 
 ## Running the Recursive DNS Resolver
 
-   ### Prerequisites
-### Running the Script
-1. **Make the Script Executable**
-   - Run the command below in your terminal to make the script executable:
+### Prerequisites
 
-     ```
-     ```
+### Instructions for Duplicating Our Experiments:
 
-   2. **Execute the Script**
-
-
-      ```
-     
-      ```
-
-
-# TODO:
-- [x] Collect results code
-- [x] Collect results
-- [x] Analysis code
-  - [x] Initial analysis
-  - [ ] Full resolvability check
-- [ ] Visuals & output code estimate 2 days
-- [ ] Visual & output — basically, free
-- [ ] Write up paper
-
-- Get updated resolver thing
-- Ask about resolver diff functioning
-- Implement/Ask about secondary check
-
-
-## Instructions for duplicating our experiments:
-
-## Dependencies
+#### Dependencies
 ```bash
 pip3 install pandas
-```
-```bash
 pip3 install ipaddress
-```
-```bash
 pip3 install matplotlib
-```
-```bash
-pip3 install dns
-```
-```bash
-import json
-```
-```bash
-import csv
-```
-```bash
-import argparser
+pip3 install dnspython
+pip3 install seaborn
 ```
 
-## Scripts
+#### Scripts
 * 
 
-## All the python files 
+#### All Python Files
 * `resolver.py`
 * `analysis.py`
 * `result_visualization.py`
 
-
-## All csv files after research is completed
-
-
-## All visuals (png files) after research is completed
+#### All CSV Files After Research Is Completed
 
 
-## Further Research 
+#### All Visuals (PNG Files) After Research Is Completed
+
+
+## Further Research
+```
+
+
  
