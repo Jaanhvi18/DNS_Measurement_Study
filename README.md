@@ -13,22 +13,36 @@
 #### Dependencies
 ```bash
 pip3 install pandas
+```
+```bash
 pip3 install ipaddress
+```
+```bash
 pip3 install matplotlib
+```
+```bash
 pip3 install dnspython
+```
+```bash
 pip3 install seaborn
 ```
-
-#### Scripts
-* 
 
 #### All Python Files
 * `resolver.py`
 * `analysis.py`
 * `result_visualization.py`
 
-#### All CSV Files After Research Is Completed
+### CSV Files
+* `out_of_zone_nses_10k.csv`
+* `domain_resolvability_10k.csv`
 
+### JSON Files
+* `secondary_resolutions_10k.json`
+* `resolutions.json`
+* `resolutions_20k.json`
+* `resolutions_10k.json`
+
+  
 
 #### All Visuals (PNG Files) After Research Is Completed
 
