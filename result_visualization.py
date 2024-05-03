@@ -1,32 +1,34 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Read the CSV file
-df = pd.read_csv('domain_resolvability_check.csv')
+# Read data from CSV file
+df = pd.read_csv('domain_resolvability_10k.csv')
 
-# Calculate percentages
-ipv6_resolvable_percentage = df['IPv6 Resolvable'].value_counts(normalize=True) * 100
-ipv4_presence = df['IPv4'].notna()
-ipv4_presence_percentage = ipv4_presence.value_counts(normalize=True) * 100
+# Calculate the total number of domains
+total_domains = len(df)
 
-# Bar graph for IPv6 Resolvable
-plt.figure(figsize=(12, 6))
+# Count the number of domains that are IPv4 resolvable, IPv6 resolvable, and neither
+ipv4_resolvable_count = df['IPv4 Resolvable'].sum()
+ipv6_resolvable_count = df['IPv6 Resolvable'].sum()
+neither_resolvable_count = total_domains - (ipv4_resolvable_count + ipv6_resolvable_count)
 
-plt.subplot(1, 2, 1)
-ipv6_resolvable_percentage.plot(kind='bar', color=['blue', 'orange'])
-plt.title('Percentage of Domains by IPv6 Resolvability')
-plt.xlabel('IPv6 Resolvable')
+# Calculate the percentage of domains that are IPv4 resolvable, IPv6 resolvable, and neither
+ipv4_resolvable_percentage = (ipv4_resolvable_count / total_domains) * 100
+ipv6_resolvable_percentage = (ipv6_resolvable_count / total_domains) * 100
+neither_resolvable_percentage = (neither_resolvable_count / total_domains) * 100
+
+# Create a bar graph
+labels = ['IPv4 only', 'IPv6 and IPv4', 'Unreachable']
+percentages = [ipv4_resolvable_percentage, ipv6_resolvable_percentage, neither_resolvable_percentage]
+
+plt.bar(labels, percentages, color=['green', 'yellow', 'red'])
+plt.xlabel('Resolvability')
 plt.ylabel('Percentage')
-plt.xticks(range(len(ipv6_resolvable_percentage)), ['False', 'True'], rotation=0)
+plt.title('Percentage of Domains that are IPv4, IPv6, or Neither Resolvable')
+plt.ylim(0, 100)  # Set y-axis limits to ensure percentages are displayed properly
 
-# Bar graph for IPv4 Presence
-plt.subplot(1, 2, 2)
-ipv4_presence_percentage.plot(kind='bar', color=['red', 'green'])
-plt.title('Percentage of Domains by IPv4 Presence')
-plt.xlabel('IPv4 Presence')
-plt.ylabel('Percentage')
-plt.xticks(range(len(ipv4_presence_percentage)), ['False', 'True'], rotation=0)
+# Save the graph as a PNG file
+plt.savefig('ipv4_ipv6_resolvability.png')
 
-plt.tight_layout()
-plt.savefig('ipv6_ipv4_presence.png')  # Save the graph as a PNG file
-plt.close()
+# Show the graph
+plt.show()
