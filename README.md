@@ -1,4 +1,4 @@
-```markdown
+
 # Capstone Project
 
 [GOOGLE DRIVE LINK FOR PROJECT DATA](https://drive.google.com/drive/folders/1RQK7osadHCDTjQSZ3uq-o2Xk6wLZ62-J?usp=drive_link)
@@ -33,7 +33,7 @@ pip3 install seaborn
 
 
 ## Further Research
-```
+
 
 
  
